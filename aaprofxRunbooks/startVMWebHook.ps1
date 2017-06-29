@@ -1,9 +1,9 @@
- Param(
+Param(
     [object]$WebhookData
 )
 
 
-#Start ARM VM from webhook
+#Start ARM VM from webhook - azure automation
 # If runbook was called from Webhook, WebhookData will not be null.
  if ($WebhookData -ne $null) {
 
@@ -28,8 +28,3 @@
      {
         Write-Error "Runbook meant to be started only from webhook."
      }
-
-          
-          
-
- 
