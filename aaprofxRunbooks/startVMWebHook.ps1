@@ -3,7 +3,7 @@
 )
 
 
-
+#Start ARM VM from webhook
 # If runbook was called from Webhook, WebhookData will not be null.
  if ($WebhookData -ne $null) {
 
